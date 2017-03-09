@@ -1,0 +1,59 @@
+<div class="summary">
+  <div class="row">
+    <div class="col-md-3">
+      <summary-box 
+        boxTitle="Box 1" 
+        label="Month" 
+        labelStatus="success" 
+        title="Total income" 
+        performance="-30" 
+        value="1444">
+      </summary-box>
+    </div>
+    <div class="col-md-3">
+      <summary-box 
+        boxTitle="Box 2" 
+        label="Day" 
+        labelStatus="success" 
+        title="Total income" 
+        performance="0" 
+        value="1444">
+      </summary-box>
+    </div>
+    <div class="col-md-3">
+      <summary-box 
+        boxTitle="Box 3 title" 
+        label="Year" 
+        labelStatus="primary" 
+        title="Total income" 
+        performance="20" 
+        value="1444">
+      </summary-box>
+    </div>
+    <div class="col-md-3">
+      <summary-box 
+        boxTitle="Box 1" 
+        label="Month" 
+        labelStatus="warning" 
+        title="Total Visitors" 
+        performance="30" 
+        value="500">
+      </summary-box>
+    </div>
+  </div>
+</div>
+<div>
+  <div class="row">
+    <div class="col-md-4">
+      <todo-list-box [todoList]="todoList" (updateTask)="updateTask($event)"></todo-list-box>
+      <todo-list-box [todoList]="todoList2" (updateTask)="updateTask($event)"></todo-list-box>
+    </div>
+    <div class="col-md-8">
+      <calendar-box 
+        [events]="events"
+        (eventClick)="calendarEventClick($event)"
+      >
+      </calendar-box>
+    </div>
+  </div>
+</div>

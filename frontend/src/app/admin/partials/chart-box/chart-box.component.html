@@ -1,0 +1,27 @@
+<div class="chart-box box">
+  <div class="box-title">
+    <h5>Line chart {{chartType}}</h5>
+  </div>
+  <div class="box-content">
+    <canvas baseChart width="400" height="150"
+      *ngIf="chartType && chartType != 'pie'"
+      [datasets]="lineChartData"
+      [labels]="lineChartLabels"
+      [options]="lineChartOptions"
+      [colors]="lineChartColors"
+      [legend]="lineChartLegend"
+      [chartType]="lineChartType"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)">
+    </canvas>
+
+    <canvas baseChart
+      width="400" height="150"
+      *ngIf="chartType && chartType == 'pie'"
+      [data]="pieChartData"
+      [labels]="pieChartLabels"
+      [chartType]="chartType"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)"></canvas>
+  </div>
+</div>

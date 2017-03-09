@@ -1,0 +1,23 @@
+#breadcrumbs {
+  margin: 30px 0 0 0;
+  padding: 0 30px;
+}
+#breadcrumbs ul {
+  background: #fff;
+  margin: 0;
+  padding: 10px;
+}
+#breadcrumbs ul li {
+  display: inline-block;
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+#breadcrumbs ul li:after {
+  font-family: 'FontAwesome';
+  content: '\f105';
+  transform: translateX(6px);
+  display: inline-block;
+}
+#breadcrumbs ul li:last-child:after {
+  display: none;
+}

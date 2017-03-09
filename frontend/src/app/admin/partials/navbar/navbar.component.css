@@ -1,0 +1,21 @@
+#navbar .top-links>li {
+  display: inline-block;
+  vertical-align: top;
+}
+#navbar .top-links li.profile {
+  padding: 10px 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.4)
+}
+#navbar .top-links > li > a {
+  color: #777;
+  padding: 20px 10px;
+  display: inline-block;
+}
+#navbar .avatar {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-size: cover;
+  background-position: center center;
+  margin-right: 15px;
+}

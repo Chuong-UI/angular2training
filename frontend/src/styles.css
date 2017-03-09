@@ -1,0 +1,120 @@
+/* You can add global styles to this file, and also import other style files */
+a {
+  color: #777;
+  cursor: pointer;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+
+input[type="checkbox"] {
+  position: relative;
+}
+input[type="checkbox"]:before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border: 1px solid #e7eaec;
+}
+input[type="checkbox"]:checked:after {
+  content: "\f00c";
+  font-family: 'FontAwesome';
+  position: absolute;
+  z-index: 1;
+  color: #5cb85c;
+  font-size: 12px;
+  top: 1px;
+}
+
+.text_success {
+  color: #5cb85c;
+}
+.text_primary {
+  color: #337ab7;
+}
+.text_danger {
+  color: #d9534f;
+}
+.text_warning {
+  color: #f0ad4e;
+}
+.box {
+  background: #fff;
+  color: #777;
+  margin-bottom: 30px;
+  border-top: 2px solid #e7eaec;
+}
+.box-title {
+  padding: 15px 15px;
+  border-bottom: 1px solid #e7eaec;
+}
+.box-title h5 {
+  margin: 0;
+  font-weight: bold;
+  color: #777;
+}
+.box-title .box-label {
+  font-size: 10px;
+  padding: .2em .6em .2em;
+  // line-height: 14px;
+}
+.box-content {
+  padding: 15px 20px 20px 20px;
+}
+.box-main-content .big {
+  font-size: 30px;
+}
+
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+  }
+}
+
+-webkit-@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}

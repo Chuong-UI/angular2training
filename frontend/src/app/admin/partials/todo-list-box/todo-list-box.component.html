@@ -1,0 +1,15 @@
+<div class="summary-box box fadeInRight animated">
+  <div class="box-title clearfix">
+    <h5 class="pull-left">Todo list</h5>
+  </div>
+  <div class="box-content">
+    <div class="todo-list">
+      <div class="checkbox" *ngFor="let item of todoList">
+        <label>
+          <input type="checkbox" [(ngModel)]="item.finished" (ngModelChange)="updateTaskStatus(item)"/>
+          {{item.title}}
+        </label>
+      </div>
+    </div>
+  </div>
+</div>

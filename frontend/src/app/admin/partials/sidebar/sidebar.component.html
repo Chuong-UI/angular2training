@@ -1,0 +1,18 @@
+<div id="sidebar">
+  <ul class="nav">
+    <li class="nav-header"></li>
+    <li class="seperator"></li>
+    <li class="clearfix" *ngFor="let item of items" [ngClass]="{'opened': item.opened, 'has-child': item.children}">
+      <a (click)="clickOnItem(item)" [ngClass]="{active: item.active}">
+        <i class="fa" [ngClass]="item.icon"></i>
+        {{item.title}}
+        <i class="fa fa-chevron-left pull-right toggle-icon" *ngIf="item.children"></i>
+      </a>
+      <ul *ngIf="item.children" class="nav submenu" [ngStyle]="{'height.px': item.children.length*40}">
+        <li *ngFor="let child of item.children">
+          <a [ngClass]="{active: child.active}" (click)="changeState(child)">{{child.title}}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

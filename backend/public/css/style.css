@@ -1,0 +1,56 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.relative {
+  position: relative;
+}
+.middle-child {
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: 2;
+  margin: 0 auto;
+  position: absolute;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+}
+.full-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#form-page {
+  height: 100vh;
+  position: relative;
+}
+#form-page .overlay {
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+#register-form {
+  max-width: 600px;
+}
+
+#form-page form.form {
+  background: #fff;
+  padding: 20px;
+}
+
+#form-page h2 {
+  margin-top: 0;
+}
+form.form button.submit-btn {
+  width: 100%;
+}
+form.form .input-group .input-group-addon.text {
+  min-width: 120px;
+}

@@ -1,0 +1,15 @@
+<div class="summary-box box fadeInRight animated">
+  <div class="box-title clearfix">
+    <h5 class="pull-left">{{boxTitle || 'Box title'}}</h5>
+    <span class="pull-right label label-{{labelStatus}} box-label">{{label}}</span>
+  </div>
+  <div class="box-content">
+    <div class="box-main-content">
+      <span class="big">{{value}}</span>
+    </div>
+    <div class="details clearfix small">
+      <span>{{title}}</span>
+      <span class="pull-right" [ngClass]="{'text_success': performance>=0, 'text_danger': performance<0}"><b>{{performance}}%</b> <i class="fa" [ngClass]="{'fa-level-up': performance>=0, 'fa-level-down': performance<0}"></i></span>    
+    </div>
+  </div>
+</div>

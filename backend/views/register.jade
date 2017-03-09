@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  #form-page
+    .overlay.full-child
+    form#register-form.form.middle-child(method="post", action="/register")
+      h2.text-center Register
+      .input-group.form-group
+        .input-group-addon.text Email
+        input.form-control(type="email" name="email" required)
+
+      .input-group.form-group
+        .input-group-addon.text First Name
+        input.form-control(type="text" name="firstName" required)
+
+      .input-group.form-group
+        .input-group-addon.text Last Name
+        input.form-control(type="text" name="lastName" required)
+
+      .input-group.form-group
+        .input-group-addon.text Password
+        input.form-control(type="password" name="password" required)
+
+      button.btn.btn-lg.btn-success.submit-btn Register

@@ -1,0 +1,26 @@
+#main-content {
+  padding: 30px;
+}
+#admin-page {
+  background: #f3f3f4;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+app-sidebar {
+  min-height: 100vh;
+  width: 220px;
+  background: #2f4050;
+}
+
+#page-wrapper {
+  width: calc(100% - 220px);
+}
+
+#page-wrapper app-navbar {
+  background: #ffffff;
+  height: 60px;
+  display: block;
+  border-bottom: 1px solid #e7eaec;
+}
