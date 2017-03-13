@@ -66,24 +66,9 @@ export class SidebarComponent implements OnInit {
       ]
     },
     {
-      title: 'Graphs 2',
-      icon: 'fa-bar-chart-o',
-      url: '#',
-      opened: false,
-      children: [
-        {
-          title: 'Line chart',
-          url: '#'
-        },
-        {
-          title: 'Bar Chart',
-          url: '#'
-        },
-        {
-          title: 'Pie Chart',
-          url: '#'
-        }
-      ]
+      title: 'Services',
+      icon: 'fa-cogs',
+      url: 'services',
     },
   ];
   clickOnItem = (item) => {

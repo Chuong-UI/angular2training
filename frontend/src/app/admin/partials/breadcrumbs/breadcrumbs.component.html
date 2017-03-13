@@ -1,4 +1,4 @@
-<div id="breadcrumbs">
+<div id="breadcrumbs" *ngIf="breadcrumbs.length">
   <ul>
     <li><a routerLink="/admin/dashboard"><i class="fa fa-home"></i></a></li>
     <li *ngFor="let item of breadcrumbs">

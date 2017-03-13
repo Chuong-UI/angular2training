@@ -10,12 +10,9 @@ declare var _:any;
 export class BreadcrumbsComponent implements OnInit {
 
   constructor(private router: Router) {
-    console.log(this.router);
     router.events.subscribe((val) => {
-      console.log(val);
       let currentUrl = '';
       let paths = _.filter(val.url.split('/'), (path) => {return path && path != 'admin'});
-      console.log(paths);
       this.breadcrumbs = _.map(paths, (item) => {
         currentUrl += item + '/';
         return {

@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-sm-4">
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+          First list
+      </div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <li *ngFor="let item of firstList; let i = index" class="list-group-item">{{item}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+          Second list
+      </div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <li *ngFor="let item of secondList; let i = index" class="list-group-item">{{item}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="panel panel-warning">
+      <div class="panel-heading">
+          Thrid list
+      </div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <li *ngFor="let item of thridList; let i = index" class="list-group-item">{{item}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
